@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flex</title>
+</head>
+<style type="text/css">
+@media (min-width:768px){
+	.container1{
+		display: flex; /* This help the element in the container to fill up the whole with of the container */
+		/*align-items: flex-end;/* this help to reduce the height of the column and make it level up with the rest of the column but it starts at the end*/
+		/*align-items: flex-start;*//* this help to reduce the height of the column and make it level up with the rest of the column but it starts at the top*/
+		/*flex-direction: column; This makes all the divs to be horizontal*/
+		/*flex-direction: row; this makes all the divs to be vertical*/
+		/*flex-direction: row-reverse; this reverse the arrangement of the rows*/
+	}
+
+	.container1 div,.container-2 div{
+		border:1px black solid;
+		padding:10px;
+	}
+
+	.container-2{
+		display:flex;
+		/*justify-content: flex-end; with this i can move all the element in a container to the right*/
+		/*justify-content: flex-start; with this i can move all the element in a container to the left*/
+		/*justify-content: center; with this i can move all the element in a container to the right*/
+		/*justify-content: space-between; this add space the various divs.*/
+		/*justify-content: space-around; these gives space by the right and left of each divs*/
+	}
+
+	.box1{
+		flex:1;/* flex helps to determine the width of the width of the page*/
+		/*order:3;This help to tell the column where they should be which can be either the first,second or third*/
+	}
+
+	.box2{
+		flex:1;
+		/*order:1;*/
+	}
+
+	.box3{
+		flex:2;
+		/*order:2;*/
+	}
+
+	.container-2-box{
+		/*width:30%;*/
+		flex-basis: 27%; /*This works like width but it also works with the responsiveness*/
+	}
+}
+.container-3{
+	display:flex;
+	flex-wrap:wrap;
+}
+.container-3 div{
+	border:1px black solid;
+		padding:10px;
+}
+
+.container-3-box{
+	flex-basis: 12%
+}
+
+</style>
+<body>
+	<div class="container1">
+		<div class="box1">
+			<h1>Box 1</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="box2">
+			<h1>Box Two</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="box3">
+			<h1>Box Third</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+
+	<div class="container-2">
+		<div class="container-2-box">
+			<h1>Box Four</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-2-box">
+			<h1>Box Five</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-2-box">
+			<h1>Box Six</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+
+	<div class="container-3">
+		<div class="container-3-box">
+			<h1>Box Seven</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-3-box">
+			<h1>Box Eight</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-3-box">
+			<h1>Box Nine</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-3-box">
+			<h1>Box Ten</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-3-box">
+			<h1>Box Eleven</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+
+		<div class="container-3-box">
+			<h1>Box Tweleve</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+</body>
+</html>
